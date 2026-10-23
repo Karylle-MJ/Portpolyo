@@ -1,0 +1,17 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // --- Mobile Menu Toggle ---
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
+
+    // --- Dynamic Copyright Year ---
+    const yearElement = document.getElementById('year');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+});
